@@ -1,0 +1,73 @@
+{
+  "version": 3,
+  "configurePresets": [
+    {
+      "name": "ninja-msvc-x64-debug",
+      "displayName": "Ninja + MSVC x64 (Debug)",
+      "description": "Uses Ninja generator with MSVC compiler targeting x64 architecture in Debug mode",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/x64-debug",
+      "toolchainFile": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+      "environment": {
+        "VCPKG_ROOT": "C:/Users/ianno/vcpkg"
+      },
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
+        "VCPKG_TARGET_TRIPLET": "x64-windows"
+      }
+    },
+    {
+      "name": "ninja-msvc-x64-release",
+      "displayName": "Ninja + MSVC x64 (Release)",
+      "description": "Uses Ninja generator with MSVC compiler targeting x64 architecture in Release mode",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/x64-release",
+      "toolchainFile": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+      "environment": {
+        "VCPKG_ROOT": "C:/Users/ianno/vcpkg"
+      },
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
+        "VCPKG_TARGET_TRIPLET": "x64-windows"
+      }
+    },
+    {
+      "name": "ninja-msvc-arm64-debug",
+      "displayName": "Ninja + MSVC ARM64 (Debug)",
+      "description": "Uses Ninja generator with MSVC cross-compiler targeting ARM64 architecture in Debug mode",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/arm64-debug",
+      "toolchainFile": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+      "environment": {
+        "VCPKG_ROOT": "C:/Users/ianno/vcpkg"
+      },
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
+        "VCPKG_TARGET_TRIPLET": "arm64-windows",
+        "CMAKE_SYSTEM_NAME": "Windows",
+        "CMAKE_SYSTEM_PROCESSOR": "ARM64"
+      }
+    },
+    {
+      "name": "ninja-msvc-arm64-release",
+      "displayName": "Ninja + MSVC ARM64 (Release)",
+      "description": "Uses Ninja generator with MSVC cross-compiler targeting ARM64 architecture in Release mode",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/arm64-release",
+      "toolchainFile": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+      "environment": {
+        "VCPKG_ROOT": "C:/Users/ianno/vcpkg"
+      },
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
+        "VCPKG_TARGET_TRIPLET": "arm64-windows",
+        "CMAKE_SYSTEM_NAME": "Windows",
+        "CMAKE_SYSTEM_PROCESSOR": "ARM64"
+      }
+    }
+  ]
+}
