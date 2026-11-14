@@ -22,3 +22,7 @@ TEST(ALIGNEMENT_TEST, Mat4x4fAlignment) {
     EXPECT_EQ(alignof(Mat4x4f), ALIGN_VEC4F * 4); // Four column vectors
 }
 
+// Quaternion alignement test (expected 16 bytes)
+TEST(ALIGNEMENT_TEST, QuaternionAlignment) {
+    EXPECT_EQ(alignof(Quaternion), ALIGN_QUATERNION);
+}

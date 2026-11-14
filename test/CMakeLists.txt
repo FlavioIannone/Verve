@@ -10,6 +10,7 @@ add_executable(unit_tests
     # ${CMAKE_SOURCE_DIR}/src/primitives/tests/Vec3fTest.cpp
     # ${CMAKE_SOURCE_DIR}/src/primitives/tests/Vec4fTest.cpp
     # ${CMAKE_SOURCE_DIR}/src/primitives/tests/Mat4x4fTest.cpp
+    ${CMAKE_SOURCE_DIR}/src/primitives/tests/QuaternionTest.cpp
 )
 
 target_include_directories(unit_tests PRIVATE ${CMAKE_SOURCE_DIR}/include)

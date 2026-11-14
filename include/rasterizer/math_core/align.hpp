@@ -13,5 +13,8 @@ constexpr std::size_t ALIGN_VEC4F = 16;
 constexpr std::size_t ALIGN_VEC3F = 4;
 constexpr std::size_t ALIGN_VEC2F = 8;
 
+// QUATERNION
+constexpr std::size_t ALIGN_QUATERNION = 16;
+
 // MATRIX
 constexpr std::size_t ALIGN_MAT4X4F = 64;
